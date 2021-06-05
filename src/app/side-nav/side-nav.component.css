@@ -1,0 +1,14 @@
+.content-container{
+    width: 150px;
+}
+.example-container {
+    width: auto;
+    height:auto;
+    margin: 10px;
+    
+  }
+
+  .listOfProducts{
+    display: flex;
+  }
+  

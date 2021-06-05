@@ -10,6 +10,12 @@ import { ToolBarComponent } from './tool-bar/tool-bar.component';
 import { ProductComponent } from './product/product.component';
 import { MatCardModule } from '@angular/material/card';
 
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { MatDividerModule } from '@angular/material/divider';
+import { SideNavComponent } from './side-nav/side-nav.component';
+import { MatButtonModule } from '@angular/material/button';
+
+
 
 
 @NgModule({
@@ -17,6 +23,7 @@ import { MatCardModule } from '@angular/material/card';
     AppComponent,
     ToolBarComponent,
     ProductComponent,
+    SideNavComponent,
 
   ],
   imports: [
@@ -25,7 +32,10 @@ import { MatCardModule } from '@angular/material/card';
     BrowserAnimationsModule,
     MatToolbarModule,
     MatIconModule,
-    MatCardModule
+    MatCardModule,
+    MatSidenavModule,
+    MatDividerModule,
+    MatButtonModule
   ],
   providers: [],
   bootstrap: [AppComponent]
