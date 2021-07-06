@@ -1,2 +1,19 @@
-<app-tool-bar></app-tool-bar>
-<app-side-nav></app-side-nav>
+<mat-sidenav-container fullscreen>
+    <mat-sidenav mode="side" #sidenav opened position="start">
+        left panel
+    </mat-sidenav>
+    <mat-sidenav-content>
+        <mat-toolbar color="primary">
+            <button mat-icon-button (click)="sidenav.toggle()">
+                <mat-icon>menu</mat-icon>
+            </button>
+            My Application
+            <span class="toolbar-spacer"></span>
+            My Account
+        </mat-toolbar>
+        <div class="main-content">
+            <app-side-nav></app-side-nav>
+        </div>
+        <router-outlet></router-outlet>
+    </mat-sidenav-content>
+</mat-sidenav-container>
